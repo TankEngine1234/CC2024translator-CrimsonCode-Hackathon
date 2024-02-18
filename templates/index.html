@@ -1,0 +1,11 @@
+<!doctype html>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<body>
+    <section>
+        <h1>Upload a image/video</h1>
+        <form action = "/upload" method = "POST" enctype="multipart/form-data">   
+            <input type="file" name="file" />   
+            <input type = "submit" value="Upload">   
+        </form>  
+    </section>
+</body>
